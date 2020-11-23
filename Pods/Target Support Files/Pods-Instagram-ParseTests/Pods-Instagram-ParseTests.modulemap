@@ -1,0 +1,6 @@
+framework module Pods_Instagram_ParseTests {
+  umbrella header "Pods-Instagram-ParseTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
