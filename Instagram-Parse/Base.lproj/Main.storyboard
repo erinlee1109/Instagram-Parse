@@ -13,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="vtx-eX-vSH">
             <objects>
-                <viewController id="A3U-Ah-8kp" customClass="LoginViewController" customModule="Instagram_parse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="A3U-Ah-8kp" customClass="LoginViewController" customModule="Instagram_Parse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PfG-Gv-mVV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,12 +76,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOI-6E-yjo" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="97" y="826"/>
+            <point key="canvasLocation" x="142" y="826"/>
         </scene>
         <!--Camera View Controller-->
         <scene sceneID="bne-Js-8vI">
             <objects>
-                <viewController id="Wvz-Fd-DoC" customClass="CameraViewController" customModule="Instagram_parse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wvz-Fd-DoC" customClass="CameraViewController" customModule="Instagram_Parse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cPa-Bk-Gh5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -124,7 +124,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2631.8840579710145" y="825.66964285714278"/>
+            <point key="canvasLocation" x="2401" y="826"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="adM-F6-hJy">
@@ -139,7 +139,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="430" id="u5W-Hc-Ets" customClass="PostCell" customModule="Instagram_parse" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="PostCell" rowHeight="430" id="u5W-Hc-Ets" customClass="PostCell" customModule="Instagram_Parse" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="430"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="u5W-Hc-Ets" id="aZu-aF-F6k">
@@ -186,6 +186,37 @@
                                             <outlet property="usernameLabel" destination="OcA-AL-aAS" id="Shw-Kh-Zzy"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="4f5-xu-wQB">
+                                        <rect key="frame" x="0.0" y="458" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4f5-xu-wQB" id="kRC-RC-CP6">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yujeong" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOy-m6-hJQ">
+                                                    <rect key="frame" x="8" y="8" width="67" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzL-B1-E24">
+                                                    <rect key="frame" x="83" y="8" width="42" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ZzL-B1-E24" firstAttribute="leading" secondItem="nOy-m6-hJQ" secondAttribute="trailing" constant="8" id="0X0-yN-YVP"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZzL-B1-E24" secondAttribute="trailing" constant="8" id="4zp-Tv-VBG"/>
+                                                <constraint firstItem="ZzL-B1-E24" firstAttribute="top" secondItem="kRC-RC-CP6" secondAttribute="top" constant="8" id="DCk-lc-uXF"/>
+                                                <constraint firstItem="nOy-m6-hJQ" firstAttribute="top" secondItem="kRC-RC-CP6" secondAttribute="top" constant="8" id="Kxp-48-aSb"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="nOy-m6-hJQ" secondAttribute="bottom" constant="8" id="TMd-Fu-Xeg"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ZzL-B1-E24" secondAttribute="bottom" constant="8" id="U7k-un-TYe"/>
+                                                <constraint firstItem="nOy-m6-hJQ" firstAttribute="leading" secondItem="kRC-RC-CP6" secondAttribute="leading" constant="8" id="hr0-eI-epR"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
@@ -193,6 +224,17 @@
                         <viewLayoutGuide key="safeArea" id="vM7-Oo-PTt"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gv6-j2-9Nv">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="eYE-em-kI9">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="O3o-Jr-qoj">
+                                <rect key="frame" x="20" y="5.5" width="92" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="onLogoutButton:" destination="99h-PN-5V2" eventType="touchUpInside" id="LZS-uW-cgG"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" image="insta_camera_btn" id="Y8M-n6-oSh">
                             <connections>
                                 <segue destination="Wvz-Fd-DoC" kind="presentation" id="RXD-oD-dYo"/>
@@ -205,12 +247,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1am-4n-g0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1815.9420289855075" y="826.33928571428567"/>
+            <point key="canvasLocation" x="1646" y="826"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="it5-mc-nUv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="QtE-rl-f2y" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FeedNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="QtE-rl-f2y" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UXS-fy-GZv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -223,7 +265,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D5c-PR-icL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="906" y="827"/>
+            <point key="canvasLocation" x="904" y="826"/>
         </scene>
     </scenes>
     <resources>
