@@ -11,7 +11,10 @@ import UIKit
 class CommentCell: UITableViewCell {
     
     //left off at 5th video, 6:20
-
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var commentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
